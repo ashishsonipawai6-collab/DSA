@@ -8,7 +8,7 @@ class Solution {
             int first= nums[i];
             int sec = target - first;
 
-            if(m.get(sec) != null){
+            if(m.containsKey(sec)){
                 return new int[]{m.get(sec), i};
             }
 
